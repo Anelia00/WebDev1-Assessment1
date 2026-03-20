@@ -1,135 +1,171 @@
-/* Page background and base font styling */
+/* Page background and main text styling */
 body {
-    background-color: #ff69b4;
-    /* Pink background for the page */
+    background-color: #5ca4e3;
     font-family: Arial, sans-serif;
-    /* Simple, readable sans-serif font */
     font-size: 18px;
-    /* Base font size for body text */
     max-width: 900px;
-    /* Limits page width for better readability */
     margin: 0 auto;
-    /* Centers the page horizontally */ 
     padding: 15px;
-    /* Space around the page content */
 }
 
-/* Header section containing the site title image and shopping cart */
+/* Header section */
 header {
     text-align: center;
-    /* Centers header content */
     padding: 10px 0;
-    /* Vertical spacing inside the header */
 }
 
-/* Website banner image */
-header img {
-    width: 800px;
-    /* Sets width of the header image */
+/* Divider image in header */
+header .divider {
+    width: 400px;
 }
 
-/* Container for the shopping cart link */
-header a {
-    display: block;
-    /* Makes the link behave like a block element */
-    text-align: right;
-    /* Aligns the cart icon to the right */
+/* Layout for title and basket */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #005ca3;
+    padding-bottom: 8px;
 }
 
-/* Shopping cart icon styling */
-header a img {
-    width: 85px;
-    /* Sets the size of the cart icon */
+/* Website title */
+.site-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000000;
 }
 
-/* Individual photo cards in the gallery */
-article {
+/* Basket link */
+.cart-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #060606;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #19006a;
+    padding: 6px 10px;
+}
+
+/* Basket icon */
+.cart-link img {
+    width: 28px;
+}
+
+/* Basket hover */
+.cart-link:hover {
+    background-color: #1f6aac;
+    color: #ffffff;
+}
+
+/* Basket focus */
+.cart-link:focus {
+    outline: 3px solid #000000;
+    outline-offset: 2px;
+}
+
+/* Main heading */
+h1 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+/* Gallery intro text */
+.gallery-intro {
+    color: #1a1a1a;
     margin-bottom: 20px;
-    /* Space between each photo card */
 }
 
-/* Styling for gallery images */
+/* Photo grid layout */
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Photo card */
+article {
+    background-color: #f2b0d1;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Images */
 article img {
     width: 100%;
-    /* Makes images fill the container width */
     height: auto;
-    /* Maintains image proportions */
     display: block;
-    /* Removes extra spacing below images */
 }
 
-/* Photo description text */
+/* Photo text */
 article p {
-    background-color: #fffde7;
-    /* Light background behind text */
-    color: #60e7f9;
-    /* Light blue text colour */
+    background-color: #96c3e3;
+    color: #1a1a1a;
     font-weight: bold;
-    /* Emphasises the text */
-    font-size: 2.5rem;
-    /* Large font size for readability */
     padding: 10px 12px;
-    /* Space inside the text box */
     margin: 0;
-    /* Removes default margins */
-    margin-top: 8px;
-    /* Adds space above the text box */
-    text-align: left;
-    /* Aligns text to the left */
+    flex-grow: 1;
 }
 
-/* "Add to basket" button styling */
+/* Button */
 button {
+    display: block;
+    width: 100%;
     background-color: #e0e0e0;
-    /* Light grey button background */
     border: 1px solid #999;
-    /* Thin border around the button */
     padding: 12px 25px;
-    /* Space inside the button */
-    font-size: 1.3rem;
-    /* Button text size */
+    font-size: 1rem;
     cursor: pointer;
-    /* Changes cursor when hovering over button */
+    text-align: center;
 }
 
-/* Button hover effect for better interaction feedback */
+/* Button hover */
 button:hover {
     background-color: #c8c8c8;
-    /* Darker grey when hovered */
 }
 
-/* Footer section styling */
+/* Button focus */
+button:focus {
+    outline: 3px solid #0021a3;
+    outline-offset: 2px;
+}
+
+/* Footer section */
 footer {
-    margin-top: 10px;
-    /* Space above the footer */
-    font-size: 2rem;
-    /* Larger text for visibility */
+    margin-top: 20px;
+    font-size: 1rem;
     font-weight: bold;
-    /* Emphasises footer text */
     text-align: left;
-    /* Aligns footer content to the left */
-    margin-left: -200px;
-    /* Adjusts positioning of footer content */
+    background-color: #004ca3;
+    color: #ffffff;
+    padding: 16px;
+    border-radius: 4px;
 }
 
-/* Navigation links inside the footer */
+/* Footer navigation */
 footer nav {
-    margin-top: 6px;
-    /* Space above footer navigation */
+    margin-top: 10px;
 }
 
-/* Footer navigation link styling */
+/* Footer list */
+footer nav ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+/* Footer links */
 footer nav a {
-    display: list-item;
-    /* Displays links like a vertical list */
-    margin-left: 20px;
-    /* Indentation for list-style layout */
-    color: #0000ee;
-    /* Standard blue link colour */
+    color: #ffffff;
     font-weight: normal;
-    /* Normal text weight for links */
-    font-size: 2rem;
-    /* Size of navigation links */
-    text-align: left;
-    /* Aligns link text to the left */
+}
+
+/* Footer link hover */
+footer nav a:hover {
+    text-decoration: none;
+    opacity: 0.8;
 }
