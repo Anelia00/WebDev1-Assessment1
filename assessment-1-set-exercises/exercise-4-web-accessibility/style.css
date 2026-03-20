@@ -64,6 +64,41 @@ header .divider {
     outline-offset: 2px;
 }
 
+/* Navigation bar */
+.main-nav {
+    margin-top: 12px;
+    background-color: #004ca3;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+
+/* Navigation links layout */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Navigation links style */
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+/* Navigation hover */
+.main-nav a:hover {
+    background-color: #1f6aac;
+}
+
+/* Navigation focus */
+.main-nav a:focus {
+    outline: 3px solid #ffffff;
+    outline-offset: 2px;
+}
+
 /* Main heading */
 h1 {
     font-size: 1.8rem;
@@ -144,28 +179,4 @@ footer {
     color: #ffffff;
     padding: 16px;
     border-radius: 4px;
-}
-
-/* Footer navigation */
-footer nav {
-    margin-top: 10px;
-}
-
-/* Footer list */
-footer nav ul {
-    list-style: disc;
-    padding-left: 20px;
-    margin: 0;
-}
-
-/* Footer links */
-footer nav a {
-    color: #ffffff;
-    font-weight: normal;
-}
-
-/* Footer link hover */
-footer nav a:hover {
-    text-decoration: none;
-    opacity: 0.8;
 }
